@@ -11,4 +11,4 @@ ser = serial.Serial("/dev/ttyS0",115200,timeout=1)  # open first serial port
 while 1:  
     str = ser.readall()  
     if str:  
-        print str 
+        print(str)

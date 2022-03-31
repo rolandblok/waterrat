@@ -8,11 +8,11 @@ GPIO.setup(EN_485,GPIO.OUT)
 GPIO.output(EN_485,GPIO.HIGH)
 
 t = serial.Serial("/dev/ttyS0",115200)    
-print t.portstr    
+print(t.portstr)
 strInput = raw_input('enter some words:')    
 n = t.write(strInput)    
-print n    
+print(n)
 str = t.read(n)    
-print str   
+print(str)
 
 
